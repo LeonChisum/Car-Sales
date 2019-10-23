@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import {createScore} from 'redux';
+import {createStore} from 'redux';
 import {Provider} from 'react-redux';
+import {reducer} from './reducers/reducer'
 
 import 'bulma/css/bulma.css';
 import './styles.scss';
 
 // Store
-const store = createScore(reducer)
+const store = createStore(reducer)
 
 const rootElement = document.getElementById('root');
 ReactDOM.render(
