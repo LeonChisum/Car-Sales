@@ -4,6 +4,7 @@ import { removeFeature } from '../actions/actions'
 const AddedFeature = props => {
   const dispatch = useDispatch();
 
+
   return (
     <li>
       {/* Add an onClick to run a function to remove a feature */}
